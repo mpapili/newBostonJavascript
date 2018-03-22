@@ -1,0 +1,27 @@
+<html>
+<title>
+	The Best Javascript Page Ever
+</title>
+<head>
+	<script type="text/javascript">
+		document.write("hello world");
+		function arrayPrint (thearray) {
+			document.write("<br>We are in the function<br>");
+			for (var i=0; i<thearray.length; i++){
+				document.write('element ' + i + ' is: ' + thearray[i] + '<br>');
+			}
+		}
+	</script>
+</head>
+<body>
+	<br>
+	<script type="text/javascript")>
+		var bodyparts = new Array("head", "shoulders", "knees", "toes");
+		var lastElement = bodyparts.pop();
+		document.write("last element was " + lastElement + "<br>");
+		bodyparts.push("test1", "Test2");
+		document.write("<br>" + bodyparts.join());
+		arrayPrint(bodyparts);
+	</script>
+</body>
+</html>

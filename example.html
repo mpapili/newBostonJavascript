@@ -1,8 +1,36 @@
 <html>
 <head>
+	<script type="text/javascript">
+		function person(name, age) {
+			this.name = name;
+			this.age = age;
+			this.sayAge = howOld;
+		}
+		function howOld(){
+			return this.age;
+		}
+		function someLoop(num){
+			var sum = 0;
+			for(var i=0; i<num; i++){
+				sum += i;	
+			}
+			return sum;
+		}
+	</script>
 </head>
 <body onUnload="alert('it has loaded');" >
 	testing some random text
+	<script type="text/javascript">
+		var mike = new person('mike', 25);
+		document.write("hello world" + mike.name + mike.age + mike.sayAge());
+		document.write("<br><br>"+someLoop(35));
+		var myArray = new Array()
+		myArray[0] = 'testing';
+		document.write("<br>" + myArray[0] + "<br>");
+		document.write(myArray.pop());
+		document.write(myArray.pop());	// should fail
+						// it does woohoo
+	</script>
 </body>
 </html>
 

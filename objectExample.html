@@ -1,0 +1,30 @@
+<html>
+	<title>
+		Object Example
+	</title>
+	<head>
+		Hello World
+	<script type="text/javascript">
+		function person (name, age) {
+			this.name = name;
+			this.age = age;
+			this.returnName = getName;
+			document.write("person created");
+		}
+		function getName(){
+			return this.name;
+		}
+		document.write("hello from javascript<br>");
+	</script>
+	</head>
+<body>
+	hello
+	<script type="text/javascript">
+		document.write("<br>body<br>");
+		var mike = new person('mike', 25);
+		document.write(mike.name + " is " + mike.age);
+		document.write("<br>Name is: " + mike.returnName());
+	</script>
+
+</body>
+</html>
