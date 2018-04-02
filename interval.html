@@ -1,0 +1,15 @@
+<html>
+<body>
+	<script type="text/javascript">
+		function printTime() {
+			var now = new Date();
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+			var seconds = now.getSeconds();
+			document.write(hours + " " + minutes + " " + seconds);
+			var t = setTimeout(printTime, 1000);
+		}
+		printTime();
+	</script>
+</body>
+</html>

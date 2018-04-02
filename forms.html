@@ -1,0 +1,15 @@
+<html>
+<body>
+	<form name='mikesform'>
+		username: <input type="text" name="username" />
+		password: <input type="password" name="password" />
+		<input type="submit" value="submit!!!"/>
+	</form>
+	<script type="text/javascript">
+		var x = document.forms[0].length;
+		document.write("this form has " + x + " fields");
+		var y = document.forms[0].elements[0].name;
+		document.write("first one is " + y);
+	</script>
+</body>
+</html>
