@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript">
+	function validator() {
+		if(document.mikesform.thebox.checked) {
+			document.write("box is checked!");
+			document.write(document.forms[0].elements[0].value);
+		} else {
+			document.write("box is not checked :(");
+			document.write(document.forms[0].elements[0].value);
+		}
+	}
+	</script>
+</head>
+<body>
+	<form name='mikesform'>
+		<input type="checkbox" name="thebox"/>
+		<input type="button" value="press me!" onClick = "validator();" />
+	</form>
+	<script type="text/javascript">
+		var x = document.forms[0].length;
+		document.write("this form has " + x + " fields");
+		var y = document.forms[0].elements[0].name;
+		document.write("first one is " + y);
+	</script>
+</body>
+</html>
